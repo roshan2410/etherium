@@ -1,13 +1,12 @@
-
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
-
-contract MyToken{
-
-  string public tokenName ="etherium";
-  string public tokenAbbvr= "eth";
+contract MyToken
+{
+  string public tokenName ="TOKEN";
+  string public tokenAbbvr= "TKN";
   uint public totalSupply=0;
 
-  // mapping variable here
+  // mapping
   mapping(address=> uint) public balances;
 
   // mint function
@@ -23,4 +22,5 @@ contract MyToken{
          balances[_address] -= _value;
       }
    }
+}
 }
